@@ -12,7 +12,7 @@ const Tweet = () => {
             <Avatar src="https://pbs.twimg.com/profile_images/1703261403237502976/W0SFbJVS_400x400.jpg" size="40" round={true} />
             <div className='ml-2 w-full'>
                 <div className='flex item-center'>
-                    <h1 className='font-bold'>Hitesh</h1>
+                    <h1 className='font-bold'>Hitesh Mehra</h1>
                     <p className='text-gray-500 text-sm ml-1'>@hiteshmehra809 . 1m</p>
                 </div>
                 <div>
