@@ -2,8 +2,15 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import userRouter from "./routes/user.route.js";
+import { v2 as cloundinary } from "cloudinary";
 
 const app = express();
+
+cloundinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
+})
 
 app.use(cors({
     origin: process.env.CORS_ORIGIN,
