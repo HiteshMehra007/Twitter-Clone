@@ -1,7 +1,10 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+
 import userRouter from "./routes/user.route.js";
+import postRouter from "./routes/post.route.js";
+
 import { v2 as cloundinary } from "cloudinary";
 
 const app = express();
@@ -29,6 +32,8 @@ app.use(cookieParser());
 // http://localhost:8000/api/v1/users/register
 
 app.use("/api/v1/users", userRouter);
+
+app.use("/api/v1/post", postRouter);
 
 
 export { app };
