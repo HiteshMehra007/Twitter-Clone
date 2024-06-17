@@ -4,6 +4,7 @@ import cors from "cors";
 
 import userRouter from "./routes/user.route.js";
 import postRouter from "./routes/post.route.js";
+import notificationRoutes from "./routes/notification.route.js";
 
 import { v2 as cloundinary } from "cloudinary";
 
@@ -34,6 +35,8 @@ app.use(cookieParser());
 app.use("/api/v1/users", userRouter);
 
 app.use("/api/v1/post", postRouter);
+
+app.use("/api/v1/notifications", notificationRoutes);
 
 
 export { app };
