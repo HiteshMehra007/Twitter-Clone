@@ -9,6 +9,7 @@ import post1 from "../assets/post1.png";
 import post2 from "../assets/post2.png";
 import post3 from "../assets/post3.png";
 import cover from "../assets/cover.png";
+import avatarPlaceholder from "../assets/avatarplaceholder.png";
 
 export default {
     twitter,
@@ -22,4 +23,5 @@ export default {
     post2,
     post3,
     cover,
+    avatarPlaceholder,
 };
