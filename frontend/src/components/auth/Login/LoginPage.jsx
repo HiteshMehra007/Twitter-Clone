@@ -19,7 +19,7 @@ const LoginPage = () => {
 	const { mutate: loginMutation, isPending, isError, error } = useMutation({
 		mutationFn: async ({ username, password }) => {
 			try {
-				const res = await fetch("/api/v1/users/login", {
+				const res = await fetch("https://social-media-thzy.onrender.com/api/v1/users/login", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",

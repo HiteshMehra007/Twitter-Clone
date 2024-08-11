@@ -79,7 +79,7 @@ const Post = ({ post }) => {
 	const { mutate: commentPost, isPending: isCommenting } = useMutation({
 		mutationFn: async () => {
 			try {
-				const res = await fetch(`/api/v1/post/comment/${post._id}`, {
+				const res = await fetch(`https://social-media-thzy.onrender.com/api/v1/post/comment/${post._id}`, {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",

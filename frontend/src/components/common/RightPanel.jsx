@@ -11,7 +11,7 @@ const RightPanel = () => {
 		queryKey: ["suggested"],
 		queryFn: async () => {
 			try {
-				const res = await fetch("/api/v1/users/suggested");
+				const res = await fetch("https://social-media-thzy.onrender.com/api/v1/users/suggested");
 				const data = res.json();
 
 				if(!res.ok) throw new Error(data.error || "Something went wrong");

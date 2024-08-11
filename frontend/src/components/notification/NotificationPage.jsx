@@ -15,7 +15,7 @@ const NotificationPage = () => {
 		queryKey: ["notifications"],
 		queryFn: async () => {
 			try {
-				const res = await fetch("/api/v1/notifications");
+				const res = await fetch("https://social-media-thzy.onrender.com/api/v1/notifications");
 				const data = await res.json();
 				if (!res.ok) throw new Error(data.error || "Something went wrong");
 				return data;

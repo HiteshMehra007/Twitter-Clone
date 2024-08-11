@@ -15,7 +15,7 @@ const CreatePost = () => {
 	const { mutate: createPost, isPending, isError, error } = useMutation({
 		mutationFn: async ({ text, img}) => {
 			try {
-				const res = await fetch("/api/v1/post/create", {
+				const res = await fetch("https://social-media-thzy.onrender.com/api/v1/post/create", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",

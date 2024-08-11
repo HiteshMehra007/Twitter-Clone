@@ -37,7 +37,7 @@ const ProfilePage = () => {
 		queryKey: ["userProfile"],
 		queryFn: async () => {
 			try {
-				const res = await fetch(`/api/v1/users/profile/${username}`);
+				const res = await fetch(`https://social-media-thzy.onrender.com/api/v1/users/profile/${username}`);
 				const data = await res.json();
 				console.log("Hii", data);
 				// if (!res.ok) {

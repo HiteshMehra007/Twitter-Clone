@@ -17,7 +17,7 @@ const Sidebar = () => {
 	const { mutate: logout } = useMutation({
 		mutationFn: async () => {
 			try {
-				const res = await fetch("/api/v1/users/logout", {
+				const res = await fetch("https://social-media-thzy.onrender.com/api/v1/users/logout", {
 					method: "POST"
 				});
 

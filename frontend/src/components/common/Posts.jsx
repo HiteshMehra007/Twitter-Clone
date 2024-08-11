@@ -8,15 +8,15 @@ const Posts = ({ feedType, username, userId }) => {
 	const getPostEndpoint = () => {
 		switch (feedType) {
 			case "forYou":
-				return "/api/v1/post/all";
+				return "https://social-media-thzy.onrender.com/api/v1/post/all";
 			case "following":
-				return "/api/v1/post/following";
+				return "https://social-media-thzy.onrender.com/api/v1/post/following";
 			case "likes":
-				return `/api/v1/post/likes/${userId}`;
+				return `https://social-media-thzy.onrender.com/api/v1/post/likes/${userId}`;
 			case "posts":
-				return `/api/v1/user/${username}`;
+				return `https://social-media-thzy.onrender.com/api/v1/user/${username}`;
 			default:
-				return "/api/v1/post/all";
+				return "https://social-media-thzy.onrender.com/api/v1/post/all";
 		}
 	}
 
