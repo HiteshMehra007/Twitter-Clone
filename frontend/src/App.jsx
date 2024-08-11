@@ -19,7 +19,7 @@ function App() {
     queryKey: ["authUser"],
     queryFn: async () => {
       try {
-        const res = await fetch("/api/v1/users/me");
+        const res = await fetch("https://social-media-thzy.onrender.com/api/v1/users/me");
         const data = await res.json();
         if(data.error) return null;
         if(!res.ok) throw new Error(data.error || "Failed to Get User Data");
